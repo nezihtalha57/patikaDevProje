@@ -19,18 +19,21 @@ def flatting(l):
 
     return l2
 
-
 l = [[1, 'a', ['cat'], 2], [[[3]], 'dog'], 4, 5]
 print(flatting(l))
+
+
+def reversedlist(reverselist):
+    for i in range(len(reverselist)):
+        if type(reverselist[i]) is list:
+            hey = reverselist[i]
+            hey = hey[::-1]
+            reverselist[i] = hey
+    return reverselist
 
 l2 = [[1, 2], [3, 4], [5, 6, 7], 3,"dizininn ortası", 4, "nezih", "talha", "karakoç"]
 
 reverselist = l2[::-1]
-print("wwwwwwwwwwwwwwwwwwwww")
-print(type(reverselist[1]))
-for i in range(len(l2)):
-    if type(reverselist[i]) is list:
-        hey = reverselist[i]
-        hey = hey[::-1]
-        reverselist[i] = hey
-print(reverselist)
+
+print(reversedlist(reverselist))
+
