@@ -2,7 +2,7 @@ def DifferentCases(strParam):
     strParam = strParam.replace("*", " ")
     strParam = strParam.replace("-", " ")
     strParam = strParam.replace("%", " ")
-    strParam.replace("", "")
+
     strParam = strParam.lower()
     strParam = strParam.title()
 
@@ -11,4 +11,4 @@ def DifferentCases(strParam):
 
 
 # keep this function call here
-print(DifferentCases(input()))
+print(DifferentCases(input()) ,".")
